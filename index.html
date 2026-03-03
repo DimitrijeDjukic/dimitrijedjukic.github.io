@@ -8,24 +8,21 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0f0f0f;color:#d8d8d8;font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.7}
 
-/* ── HEADER ── */
 .hdr{background:#141414;border-bottom:3px solid #c0392b;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .hdr h1{font-size:22px;font-weight:800;color:#fff;letter-spacing:3px;text-transform:uppercase}
-.back-btn{display:none;background:#1a1a1a;border:1px solid #333;color:#aaa;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer;transition:all .2s}
+.back-btn{display:none;background:#1a1a1a;border:1px solid #333;color:#aaa;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer;transition:all .2s;align-items:center;justify-content:center;gap:6px;line-height:1.2;vertical-align:middle}
 .back-btn:hover{background:#252525;color:#fff}
 
-/* ── LEGEND ── */
 .legend{display:flex;gap:16px;padding:10px 36px;background:#121212;border-bottom:1px solid #1e1e1e;flex-wrap:wrap;align-items:center}
 .legend span{font-size:12px;color:#999}
-.badge{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:3px;letter-spacing:1px;text-transform:uppercase}
+.badge{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:3px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;vertical-align:middle}
 .bn{background:#0c1e2e;color:#4fc3f7;border:1px solid #1a4060}
 .bk{background:#250c0c;color:#ef5350;border:1px solid #501515}
 .bd{background:#1a0d2e;color:#ce93d8;border:1px solid #4a1a6a}
-.tb{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;vertical-align:middle}
+.tb{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;margin-left:3px;font-weight:700;letter-spacing:1px;text-transform:uppercase;vertical-align:middle;white-space:nowrap}
 .ramp{background:#1a1a0a;color:#d4ac0d;border:1px solid #4a3a00}
 .str{background:#0a1a0a;color:#5a9a5a;border:1px solid #1a4a1a}
 
-/* ── MENU ── */
 #menu{padding:48px 36px}
 #menu h2{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#555;margin-bottom:28px}
 .day-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px}
@@ -40,11 +37,9 @@ body{background:#0f0f0f;color:#d8d8d8;font-family:'Segoe UI',system-ui,sans-seri
 .card-chip{background:#1a1a1a;border:1px solid #333;border-radius:4px;padding:3px 10px;font-size:12px;color:#999}
 .card-chip.run{color:#4fc3f7;border-color:#1a3a50;background:#0c1e2e}
 
-/* ── DAY VIEW ── */
 .day-view{display:none}
 .day-inner{max-width:1400px;margin:0 auto}
 
-/* ── DAY HEADER ── */
 .dh{padding:20px 36px 14px;border-bottom:2px solid #1e1e1e;background:#141414}
 .dl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0392b;margin-bottom:2px}
 .dt{font-size:22px;font-weight:800;color:#fff}
@@ -53,60 +48,56 @@ body{background:#0f0f0f;color:#d8d8d8;font-family:'Segoe UI',system-ui,sans-seri
 .mc{background:#1a1a1a;border:1px solid #333;border-radius:4px;padding:3px 12px;font-size:12px;color:#999}
 .mc.r{color:#4fc3f7;border-color:#1a3a50;background:#0c1e2e}
 
-/* ── SECTIONS ── */
 .sec{padding:14px 36px;border-bottom:1px solid #171717}
 .stitle{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c0392b;margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .stitle::after{content:'';flex:1;height:1px;background:#2a2a2a}
 .sm{font-size:10px;color:#777;font-weight:400;text-transform:none;letter-spacing:0}
 
-/* ── WARMUP ROWS ── */
 .wr{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #161616;gap:12px}
 .wr:last-child{border-bottom:none}
 .wn{font-size:14px;color:#ccc;flex:1}
 .wd{font-size:12px;color:#888;text-align:right;white-space:nowrap}
 .wk{color:#c0392b;font-weight:700}
 
-/* ── TABLE ── */
 table{width:100%;border-collapse:collapse}
 th{text-align:left;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#777;padding:6px 10px 8px;border-bottom:1px solid #1e1e1e}
 td{padding:10px;border-bottom:1px solid #161616;vertical-align:top}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:#131313}
-.en{font-size:14px;font-weight:600;color:#e0e0e0}
-.goal{font-size:11px;color:#6aaa6a;margin-top:2px;font-style:italic;line-height:1.5}
+
+/* Exercise name — keep tags on same line, allow wrapping after the name text */
+.en{font-size:14px;font-weight:600;color:#e0e0e0;display:flex;flex-wrap:wrap;align-items:center;gap:4px;line-height:1.5}
+.goal{font-size:11px;color:#6aaa6a;margin-top:4px;font-style:italic;line-height:1.5}
 .nt{font-size:12px;color:#888;margin-top:3px;line-height:1.5}
-.sr{font-size:13px;font-weight:700;color:#fff;white-space:nowrap}
+
+/* Sets & Reps column — each line: "Set 1: 12 reps  10 kg/side ✏️" */
+td.sr{vertical-align:top;min-width:160px}
+.set-line{display:flex;align-items:center;padding:3px 0;gap:8px;border-bottom:1px solid #111;flex-wrap:nowrap}
+.set-line:last-child{border-bottom:none}
+.sl-label{font-size:13px;font-weight:500;color:#ccc;white-space:nowrap;flex:0 0 auto;min-width:110px}
+.sl-weight{font-size:13px;font-weight:700;color:#c0392b;white-space:nowrap;flex:0 0 auto}
+.edit-btn{background:none;border:none;cursor:pointer;font-size:11px;opacity:0.3;transition:opacity .2s;padding:0 2px;line-height:1;flex-shrink:0}
+.edit-btn:hover{opacity:1}
+
 .tp{font-size:12px;color:#888;white-space:nowrap}
 .rs{font-size:12px;color:#888;white-space:nowrap}
 
-/* ── KG EDIT ── */
-.kg{font-size:13px;font-weight:700;color:#c0392b;white-space:nowrap;vertical-align:top}
-.kg-wrap{display:flex;align-items:center;gap:4px;margin-bottom:2px}
-.kg-val{color:#c0392b;font-weight:700}
-.edit-btn{background:none;border:none;cursor:pointer;font-size:11px;opacity:0.3;transition:opacity .2s;padding:0 2px;line-height:1}
-.edit-btn:hover{opacity:1}
-.kg-input{background:#1a1a1a;border:1px solid #c0392b;color:#c0392b;font-weight:700;font-size:13px;width:90px;padding:2px 6px;border-radius:4px;outline:none}
-
-/* ── STRETCH ROWS ── */
 .sr2{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #161616;gap:8px}
 .sr2:last-child{border-bottom:none}
 .sn{font-size:13px;color:#aaa}
 .st2{font-size:12px;color:#888;white-space:nowrap}
 
-/* ── RUN BLOCK ── */
 .rb{background:#0c1a26;border:1px solid #1a3a50;border-radius:6px;padding:14px}
 .rr{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0f2030;font-size:13px;gap:12px}
 .rr:last-child{border-bottom:none}
 .rl{color:#888}.rv{color:#4fc3f7;font-weight:600;text-align:right}
 
-/* ── BOXES ── */
 .box{padding:10px 14px;border-radius:0 4px 4px 0;font-size:13px;margin-top:10px;line-height:1.6}
 .warn{background:#1a0a0a;border-left:3px solid #c0392b;color:#cc6666}.warn strong{color:#c0392b}
 .note{background:#1a1400;border-left:3px solid #e6a817;color:#d4a84a}.note strong{color:#e6a817}
 .info{background:#0c1a0c;border-left:3px solid #4caf50;color:#7aba7a}.info strong{color:#4caf50}
 .disc{background:#1a0d2e;border-left:3px solid #9c27b0;color:#bb88cc}.disc strong{color:#ce93d8}
 
-/* ── FOOTER ── */
 .footer{background:#0c0c0c;border-top:2px solid #1e1e1e;padding:28px 36px}
 .footer h2{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c0392b;margin-bottom:18px}
 .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -117,7 +108,6 @@ tr:hover td{background:#131313}
 .key{margin-top:16px;padding:14px;background:#111;border:1px solid #1e1e1e;border-radius:6px;font-size:12px;color:#888;line-height:2.2}
 .key strong{color:#777}
 
-/* ── TOOLS BAR ── */
 .tools-bar{background:#0c0c0c;border-top:1px solid #1a1a1a;padding:12px 36px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .tools-bar span{font-size:12px;color:#888}
 .tool-btn{background:#1a1a1a;border:1px solid #333;color:#aaa;padding:7px 16px;border-radius:6px;font-size:12px;cursor:pointer;transition:all .2s}
@@ -125,7 +115,6 @@ tr:hover td{background:#131313}
 .tool-btn.danger{border-color:#5a1a1a;color:#a04040}
 .tool-btn.danger:hover{background:#1a0a0a;color:#c0392b}
 
-/* ── MODAL ── */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:100;align-items:center;justify-content:center}
 .modal-overlay.open{display:flex}
 .modal{background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:28px;min-width:300px;max-width:400px;width:90%}
@@ -142,12 +131,48 @@ tr:hover td{background:#131313}
 @media(max-width:700px){
   .day-cards{grid-template-columns:1fr}
   .pg{grid-template-columns:1fr}
-  .hdr{padding:20px}
-  .sec{padding:12px 16px}
-  .dh{padding:16px 16px 12px}
-  #menu{padding:24px 16px}
-  .tools-bar{padding:12px 16px}
-  .footer{padding:20px 16px}
+  .hdr{padding:14px 16px}
+  .hdr h1{font-size:16px;letter-spacing:1px}
+  .back-btn{font-size:13px;padding:7px 14px}
+  .sec{padding:10px 14px}
+  .dh{padding:14px 14px 10px}
+  #menu{padding:20px 14px}
+  .tools-bar{padding:10px 14px}
+  .footer{padding:18px 14px}
+  .legend{padding:8px 14px;gap:10px}
+  .dt{font-size:18px}
+  .df{font-size:12px}
+  .wr{flex-wrap:wrap;gap:4px}
+  .wd{text-align:left;white-space:normal}
+  body{overflow-x:hidden}
+  .day-inner{overflow-x:hidden}
+
+  /* Flatten table to cards */
+  table{display:block}
+  thead{display:none}
+  tbody{display:block}
+  tr{display:block;background:#141414;border:1px solid #222;border-radius:8px;margin-bottom:10px;padding:12px}
+  tr:hover{background:#141414}
+  td{display:block;border:none;padding:2px 0}
+
+  td.sr{display:block;margin:6px 0 4px;min-width:0}
+  .set-line{gap:6px}
+  .sl-label{font-size:12px;min-width:95px}
+  .sl-weight{font-size:12px}
+
+  td.tp{display:inline;font-size:11px}
+  td.tp::before{content:"Tempo: ";color:#555;font-size:11px}
+  td.rs{display:inline;font-size:11px;margin-left:10px}
+  td.rs::before{content:"Rest: ";color:#555;font-size:11px}
+
+  .rr{flex-wrap:wrap;gap:2px}
+  .rv{text-align:left}
+  .day-card{padding:20px}
+  .card-title{font-size:17px}
+  .sr2{flex-wrap:wrap;gap:4px}
+  .st2{white-space:normal}
+  .dm{gap:6px}
+  .mc{font-size:11px;padding:2px 8px}
 }
 </style>
 </head>
@@ -155,7 +180,7 @@ tr:hover td{background:#131313}
 
 <div class="hdr">
   <h1>4-Day Training Program</h1>
-  <button class="back-btn" id="backBtn" onclick="showMenu()">← Back to Menu</button>
+  <button class="back-btn" id="backBtn" onclick="showMenu()">&#8592; Back to Menu</button>
 </div>
 
 <div class="legend" id="legendBar">
@@ -166,7 +191,6 @@ tr:hover td{background:#131313}
   <span><span class="tb str">STRAIGHT</span> same weight all sets</span>
 </div>
 
-<!-- ═══ MENU ═══ -->
 <div id="menu">
   <h2>Select Training Day</h2>
   <div class="day-cards">
@@ -175,18 +199,18 @@ tr:hover td{background:#131313}
       <div class="card-title">Chest &amp; Triceps</div>
       <div class="card-focus">Horizontal Push · Overhead Push · Shoulder Integration · Arms</div>
       <div class="card-meta">
-        <span class="card-chip">⏱ 60–65 min</span>
-        <span class="card-chip run">🏃 Run after lifting</span>
+        <span class="card-chip">&#9201; 60&#8211;65 min</span>
+        <span class="card-chip run">&#127939; Run after lifting</span>
         <span class="card-chip">7 exercises</span>
       </div>
     </div>
     <div class="day-card" onclick="showDay('wednesday')">
       <div class="card-day">Wednesday</div>
-      <div class="card-title">Legs A — Quad Dominant</div>
+      <div class="card-title">Legs A &#8212; Quad Dominant</div>
       <div class="card-focus">Quad Strength · Unilateral Stability · Knee Rehab · Sport Prep</div>
       <div class="card-meta">
-        <span class="card-chip">⏱ 60–65 min</span>
-        <span class="card-chip">🚫 No running</span>
+        <span class="card-chip">&#9201; 60&#8211;65 min</span>
+        <span class="card-chip">&#128683; No running</span>
         <span class="card-chip">7 exercises</span>
       </div>
     </div>
@@ -195,18 +219,18 @@ tr:hover td{background:#131313}
       <div class="card-title">Back &amp; Biceps</div>
       <div class="card-focus">Vertical Pull · Horizontal Pull · Lower Back · Posture · Arms</div>
       <div class="card-meta">
-        <span class="card-chip">⏱ 60–65 min</span>
-        <span class="card-chip run">🏃 Run after lifting</span>
+        <span class="card-chip">&#9201; 60&#8211;65 min</span>
+        <span class="card-chip run">&#127939; Run after lifting</span>
         <span class="card-chip">8 exercises</span>
       </div>
     </div>
     <div class="day-card" onclick="showDay('sunday')">
       <div class="card-day">Sunday</div>
-      <div class="card-title">Legs B — Posterior Chain</div>
+      <div class="card-title">Legs B &#8212; Posterior Chain</div>
       <div class="card-focus">Hamstrings · Glutes · Lower Back · Eccentric Strength · Sprint &amp; Jump Prep</div>
       <div class="card-meta">
-        <span class="card-chip">⏱ 60 min</span>
-        <span class="card-chip">🚫 No running</span>
+        <span class="card-chip">&#9201; 60 min</span>
+        <span class="card-chip">&#128683; No running</span>
         <span class="card-chip">7 exercises</span>
       </div>
     </div>
@@ -214,606 +238,781 @@ tr:hover td{background:#131313}
 </div>
 
 
-<!-- ═══ DAY: TUESDAY ═══ -->
+<!-- TUESDAY -->
 <div class="day-view" id="day-tuesday">
   <div class="day-inner">
-      <div class="dh">
-    <div class="dl">Tuesday</div>
-    <div class="dt">Chest &amp; Triceps</div>
-    <div class="df">Horizontal Push · Overhead Push · Shoulder Integration · Arms</div>
-    <div class="dm">
-      <span class="mc">⏱ 60–65 min</span>
-      <span class="mc r">🏃 Run after lifting</span>
-      <span class="mc">7 exercises</span>
+    <div class="dh">
+      <div class="dl">Tuesday</div>
+      <div class="dt">Chest &amp; Triceps</div>
+      <div class="df">Horizontal Push · Overhead Push · Shoulder Integration · Arms</div>
+      <div class="dm">
+        <span class="mc">&#9201; 60&#8211;65 min</span>
+        <span class="mc r">&#127939; Run after lifting</span>
+        <span class="mc">7 exercises</span>
+      </div>
     </div>
-  </div>
 
-  <div class="sec">
-    <div class="stitle">Warm-Up <span class="sm">8 min — done at start of session</span></div>
-    <div class="wr"><span class="wn">Treadmill brisk walk</span><span class="wd">5 min</span></div>
-    <div class="wr"><span class="wn">Arm circles</span><span class="wd">20 forward + 20 back</span></div>
-    <div class="wr"><span class="wn">Band pull-apart</span><span class="wd">2 × 15, light band</span></div>
-    <div class="wr"><span class="wn">DB bench — warm-up set 1 &nbsp;<span style="color:#444;font-size:10px">(done immediately before first working set)</span></span><span class="wd"><span class="wk">6 kg/side</span> × 12 · lower 3 sec</span></div>
-    <div class="wr"><span class="wn">DB bench — warm-up set 2</span><span class="wd"><span class="wk">10 kg/side</span> × 8</span></div>
-    <div class="box note" style="margin-top:8px"><strong>Warm-up structure:</strong> Treadmill + arm circles + band pull-apart = start of session. The 2 DB bench warm-up sets happen right before you begin the bench working sets. This is how all warm-up sets in this program work — general warm-up first, specific warm-up directly before that exercise.</div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Main Work</div>
-    <table>
-      <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Weight</th><th>Tempo</th><th>Rest</th></tr>
-
-      <tr>
-        <td>
-          <div class="en">Dumbbell Bench Press <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: chest and front shoulder strength. The 3-sec descent (lowering the DBs slowly over 3 seconds until they reach chest height with full stretch) builds more muscle than dropping the weight fast and is safer for the shoulder joint.</div>
-          <div class="nt">Lower DBs until elbows are just below bench level — that bottom position with the stretch is full range of motion (full ROM). 1 sec up. Do not bounce off chest.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps<br>Set 4: 6 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_0_0"><span class="kg-val" id="kg_0_0">10 kg/side</span><button class="edit-btn" onclick="editKg('kg_0_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_0_1"><span class="kg-val" id="kg_0_1">12 kg/side</span><button class="edit-btn" onclick="editKg('kg_0_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_0_2"><span class="kg-val" id="kg_0_2">13 kg/side</span><button class="edit-btn" onclick="editKg('kg_0_2')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_0_3"><span class="kg-val" id="kg_0_3">14 kg/side</span><button class="edit-btn" onclick="editKg('kg_0_3')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">3-1-1</td><td class="rs">90 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Pec Deck / Seated Fly Machine <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: chest isolation — the stretch at full open position stimulates chest growth in a way pressing cannot. Different movement, not redundant with bench.</div>
-          <div class="nt">Pause 1 sec when arms are fully open (that stretch is the point). Don't let weight clang shut at top.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_1_0"><span class="kg-val" id="kg_1_0">10 kg</span><button class="edit-btn" onclick="editKg('kg_1_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-3</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Seated DB Shoulder Press <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: front and side deltoid strength. Integrated here so you don't need a separate shoulder day.</div>
-          <div class="nt">Lower DBs to ear level — that is full ROM for this exercise. Don't arch lower back.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_2_0"><span class="kg-val" id="kg_2_0">6 kg/side</span><button class="edit-btn" onclick="editKg('kg_2_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_2_1"><span class="kg-val" id="kg_2_1">8 kg/side</span><button class="edit-btn" onclick="editKg('kg_2_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_2_2"><span class="kg-val" id="kg_2_2">10 kg/side</span><button class="edit-btn" onclick="editKg('kg_2_2')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">2-1-2</td><td class="rs">75 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Dumbbell Lateral Raise <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: side deltoid width — fixes the narrow-shoulder appearance caused by rounded posture. The 3-sec descent is where it actually works.</div>
-          <div class="nt">Slight forward lean. Lead with elbow not wrist. Lower slowly over 3 seconds.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_3_0"><span class="kg-val" id="kg_3_0">4 kg/side</span><button class="edit-btn" onclick="editKg('kg_3_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-3</td><td class="rs">45 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Overhead Cable Triceps Extension <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: long head triceps — the part visible from behind. Only reachable in overhead position. Complements pushdown which hits a different part.</div>
-          <div class="nt">Elbows fixed beside ears. Lower until full stretch at bottom — that is full ROM here.</div>
-        </td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_4_0"><span class="kg-val" id="kg_4_0">10 kg</span><button class="edit-btn" onclick="editKg('kg_4_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-0-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Triceps Rope Pushdown <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: lateral and medial triceps head — the shape at back of arm. Different part from overhead extension, so both exercises together cover the full triceps.</div>
-          <div class="nt">Spread rope at bottom. Elbows locked at sides throughout.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_5_0"><span class="kg-val" id="kg_5_0">10 kg</span><button class="edit-btn" onclick="editKg('kg_5_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-1</td><td class="rs">60 s</td>
-      </tr>
-
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Abs <span class="sm">6 min</span></div>
-    <table>
-      <tr><th>Exercise</th><th>Sets×Reps</th><th>Load</th><th>Goal</th></tr>
-      <tr>
-        <td><div class="en">Cable Crunch <span class="tb str">STRAIGHT</span></div>
-        <div class="nt">Kneel facing cable stack, rope at top. Pull rope to knees by crunching — hips stay still. This keeps your spine in a safe position for your disc, unlike flat crunches.</div></td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_6_0"><span class="kg-val" id="kg_6_0">15 kg</span><button class="edit-btn" onclick="editKg('kg_6_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Upper ab strength under load. Cable crunch does not stress the lower back the way flat crunches do — correct replacement for your disc history.</div></td>
-      </tr>
-      <tr>
-        <td><div class="en">Leg Raise <span class="tb str">STRAIGHT</span></div>
-        <div class="nt">Hanging from bar or lying flat on bench. Slow descent over 3 seconds.</div></td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_7_0"><span class="kg-val" id="kg_7_0">Bodyweight</span><button class="edit-btn" onclick="editKg('kg_7_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Lower ab and hip flexor strength. Hanging version also decompresses the lumbar spine slightly.</div></td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Post-Session Stretch <span class="sm">5 min</span></div>
-    <div class="sr2"><span class="sn">Doorway chest stretch or cable chest stretch</span><span class="st2">2 × 30 s</span></div>
-    <div class="sr2"><span class="sn">Overhead triceps stretch, each arm</span><span class="st2">30 s each</span></div>
-    <div class="sr2"><span class="sn">Cross-body shoulder stretch</span><span class="st2">30 s each</span></div>
-    <div class="box info"><strong>Posture:</strong> The chest and shoulder stretch here directly counteracts the forward-rounded desk position you hold all day. 5 minutes. Do not skip it.</div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Running <span class="sm">after stretch</span></div>
-    <div class="rb">
-      <div class="rr"><span class="rl">Current</span><span class="rv">9 min</span></div>
-      <div class="rr"><span class="rl">Next target</span><span class="rv">9 min 30 sec</span></div>
-      <div class="rr"><span class="rl">Pace</span><span class="rv">Conversational — full sentences possible</span></div>
-      <div class="rr"><span class="rl">Weekly increase</span><span class="rv">+30 sec only if zero knee swelling next morning</span></div>
-      <div class="rr"><span class="rl">If swelling</span><span class="rv">Drop back 1 full minute, hold 2 weeks before retry</span></div>
-      <div class="rr"><span class="rl">Run days</span><span class="rv">Tuesday + Friday only</span></div>
+    <div class="sec">
+      <div class="stitle">Warm-Up <span class="sm">8 min</span></div>
+      <div class="wr"><span class="wn">Treadmill brisk walk</span><span class="wd">5 min</span></div>
+      <div class="wr"><span class="wn">Arm circles</span><span class="wd">20 forward + 20 back</span></div>
+      <div class="wr"><span class="wn">Band pull-apart</span><span class="wd">2 × 15, light band</span></div>
+      <div class="wr"><span class="wn">DB bench warm-up set 1 <span style="color:#444;font-size:10px">(right before working sets)</span></span><span class="wd"><span class="wk">6 kg/side</span> × 12 · lower 3 sec</span></div>
+      <div class="wr"><span class="wn">DB bench warm-up set 2</span><span class="wd"><span class="wk">10 kg/side</span> × 8</span></div>
     </div>
-  </div>
+
+    <div class="sec">
+      <div class="stitle">Main Work</div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Tempo</th><th>Rest</th></tr>
+
+        <tr>
+          <td>
+            <div class="en">Dumbbell Bench Press <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: chest and front shoulder strength. The 3-sec descent builds more muscle than dropping the weight fast.</div>
+            <div class="nt">Lower DBs until elbows are just below bench level — full ROM. 1 sec up. Do not bounce off chest.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="t_0_0">10 kg/side</span><button class="edit-btn" onclick="editKg('t_0_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="t_0_1">12 kg/side</span><button class="edit-btn" onclick="editKg('t_0_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="t_0_2">13 kg/side</span><button class="edit-btn" onclick="editKg('t_0_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 6 reps</span><span class="sl-weight" id="t_0_3">14 kg/side</span><button class="edit-btn" onclick="editKg('t_0_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-1</td><td class="rs">90 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Pec Deck / Seated Fly <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: chest isolation — the stretch at full open position stimulates chest growth in a way pressing cannot.</div>
+            <div class="nt">Pause 1 sec when arms are fully open. Don't let weight clang shut at top.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="t_1_0">10 kg</span><button class="edit-btn" onclick="editKg('t_1_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="t_1_1">10 kg</span><button class="edit-btn" onclick="editKg('t_1_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="t_1_2">10 kg</span><button class="edit-btn" onclick="editKg('t_1_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-3</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Seated DB Shoulder Press <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: front and side deltoid strength. Integrated here so you don't need a separate shoulder day.</div>
+            <div class="nt">Lower DBs to ear level — full ROM. Don't arch lower back.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="t_2_0">6 kg/side</span><button class="edit-btn" onclick="editKg('t_2_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="t_2_1">8 kg/side</span><button class="edit-btn" onclick="editKg('t_2_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="t_2_2">10 kg/side</span><button class="edit-btn" onclick="editKg('t_2_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">75 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Dumbbell Lateral Raise <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: side deltoid width. The 3-sec descent is where it actually works.</div>
+            <div class="nt">Slight forward lean. Lead with elbow not wrist. Lower slowly over 3 seconds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="t_3_0">4 kg/side</span><button class="edit-btn" onclick="editKg('t_3_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="t_3_1">4 kg/side</span><button class="edit-btn" onclick="editKg('t_3_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="t_3_2">4 kg/side</span><button class="edit-btn" onclick="editKg('t_3_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-3</td><td class="rs">45 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Overhead Cable Triceps Extension <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: long head triceps — the part visible from behind. Only reachable in overhead position.</div>
+            <div class="nt">Elbows fixed beside ears. Lower until full stretch at bottom — full ROM.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="t_4_0">10 kg</span><button class="edit-btn" onclick="editKg('t_4_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="t_4_1">10 kg</span><button class="edit-btn" onclick="editKg('t_4_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="t_4_2">10 kg</span><button class="edit-btn" onclick="editKg('t_4_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-0-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Triceps Rope Pushdown <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: lateral and medial triceps head. Together with overhead extension, covers the full triceps.</div>
+            <div class="nt">Spread rope at bottom. Elbows locked at sides throughout.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="t_5_0">10 kg</span><button class="edit-btn" onclick="editKg('t_5_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="t_5_1">10 kg</span><button class="edit-btn" onclick="editKg('t_5_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="t_5_2">10 kg</span><button class="edit-btn" onclick="editKg('t_5_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-1</td><td class="rs">60 s</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Abs <span class="sm">6 min</span></div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Goal</th></tr>
+        <tr>
+          <td>
+            <div class="en">Cable Crunch <span class="tb str">STRAIGHT</span></div>
+            <div class="nt">Kneel facing cable stack, rope at top. Pull rope to knees by crunching — hips stay still. Safe for disc history.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="t_6_0">15 kg</span><button class="edit-btn" onclick="editKg('t_6_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="t_6_1">15 kg</span><button class="edit-btn" onclick="editKg('t_6_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="t_6_2">15 kg</span><button class="edit-btn" onclick="editKg('t_6_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Upper ab strength under load. Does not stress the lower back the way flat crunches do.</div></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="en">Leg Raise <span class="tb str">STRAIGHT</span></div>
+            <div class="nt">Hanging from bar or lying flat on bench. Slow descent over 3 seconds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="t_7_0">Bodyweight</span><button class="edit-btn" onclick="editKg('t_7_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="t_7_1">Bodyweight</span><button class="edit-btn" onclick="editKg('t_7_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="t_7_2">Bodyweight</span><button class="edit-btn" onclick="editKg('t_7_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Lower ab and hip flexor strength. Hanging version decompresses the lumbar slightly.</div></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Post-Session Stretch <span class="sm">5 min</span></div>
+      <div class="sr2"><span class="sn">Doorway chest stretch or cable chest stretch</span><span class="st2">2 × 30 s</span></div>
+      <div class="sr2"><span class="sn">Overhead triceps stretch, each arm</span><span class="st2">30 s each</span></div>
+      <div class="sr2"><span class="sn">Cross-body shoulder stretch</span><span class="st2">30 s each</span></div>
+      <div class="box info"><strong>Posture:</strong> The chest and shoulder stretch directly counteracts the forward-rounded desk position. 5 minutes. Do not skip it.</div>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Running <span class="sm">after stretch</span></div>
+      <div class="rb">
+        <div class="rr"><span class="rl">Current</span><span class="rv">9 min</span></div>
+        <div class="rr"><span class="rl">Next target</span><span class="rv">9 min 30 sec</span></div>
+        <div class="rr"><span class="rl">Pace</span><span class="rv">Conversational — full sentences possible</span></div>
+        <div class="rr"><span class="rl">Weekly increase</span><span class="rv">+30 sec only if zero knee swelling next morning</span></div>
+        <div class="rr"><span class="rl">If swelling</span><span class="rv">Drop back 1 full minute, hold 2 weeks before retry</span></div>
+        <div class="rr"><span class="rl">Run days</span><span class="rv">Tuesday + Friday only</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- ═══ DAY: WEDNESDAY ═══ -->
+
+<!-- WEDNESDAY -->
 <div class="day-view" id="day-wednesday">
   <div class="day-inner">
-      <div class="dh">
-    <div class="dl">Wednesday</div>
-    <div class="dt">Legs A — Quad Dominant</div>
-    <div class="df">Quad Strength · Unilateral Stability · Knee Rehab · Sport Prep</div>
-    <div class="dm">
-      <span class="mc">⏱ 60–65 min</span>
-      <span class="mc">🚫 No running</span>
-      <span class="mc">7 exercises</span>
+    <div class="dh">
+      <div class="dl">Wednesday</div>
+      <div class="dt">Legs A &#8212; Quad Dominant</div>
+      <div class="df">Quad Strength · Unilateral Stability · Knee Rehab · Sport Prep</div>
+      <div class="dm">
+        <span class="mc">&#9201; 60&#8211;65 min</span>
+        <span class="mc">&#128683; No running</span>
+        <span class="mc">7 exercises</span>
+      </div>
     </div>
-  </div>
 
-  <div class="sec">
-    <div class="stitle">Warm-Up <span class="sm">10 min — all done at start of session</span></div>
-    <div class="wr"><span class="wn">Stationary bike</span><span class="wd">5 min, low resistance</span></div>
-    <div class="wr"><span class="wn">Bodyweight squat</span><span class="wd">1 × 15, 3-sec descent</span></div>
-    <div class="wr"><span class="wn">Hip circles, each leg</span><span class="wd">10 forward + 10 back</span></div>
-    <div class="wr"><span class="wn">Glute bridge — bodyweight</span><span class="wd">1 × 15, hold top 2 sec</span></div>
-    <div class="wr"><span class="wn">SL leg extension — warm-up &nbsp;<span style="color:#444;font-size:10px">(done right before SL leg extension working sets)</span></span><span class="wd"><span class="wk">8 kg</span> × 12 each leg, 3-sec eccentric</span></div>
-    <div class="box note" style="margin-top:8px"><strong>Warm-up timing:</strong> Bike + squat + hip circles + glute bridge = all at the start. SL leg extension warm-up = only when you get to that exercise in the main work section.</div>
-  </div>
+    <div class="sec">
+      <div class="stitle">Warm-Up <span class="sm">10 min</span></div>
+      <div class="wr"><span class="wn">Stationary bike</span><span class="wd">5 min, low resistance</span></div>
+      <div class="wr"><span class="wn">Bodyweight squat</span><span class="wd">1 × 15, 3-sec descent</span></div>
+      <div class="wr"><span class="wn">Hip circles, each leg</span><span class="wd">10 forward + 10 back</span></div>
+      <div class="wr"><span class="wn">Glute bridge — bodyweight</span><span class="wd">1 × 15, hold top 2 sec</span></div>
+      <div class="wr"><span class="wn">SL leg extension warm-up <span style="color:#444;font-size:10px">(right before working sets)</span></span><span class="wd"><span class="wk">8 kg</span> × 12 each leg, 3-sec eccentric</span></div>
+    </div>
 
-  <div class="sec">
-    <div class="stitle">Main Work</div>
-    <table>
-      <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Weight</th><th>Tempo</th><th>Rest</th></tr>
+    <div class="sec">
+      <div class="stitle">Main Work</div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Tempo</th><th>Rest</th></tr>
 
-      <tr>
-        <td>
-          <div class="en">Horizontal Leg Press <span class="badge bk">KNEE</span> <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: bilateral quad and glute strength — foundation for running, jumping, and cutting. Horizontal machine works identically to standard leg press.</div>
-          <div class="nt">Feet mid-platform. Stop 10° before full knee extension — never lock out. Lower the platform slowly over 3 seconds (that is the 3-sec descent / 3-sec eccentric).</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps<br>Set 4: 6 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_8_0"><span class="kg-val" id="kg_8_0">60 kg</span><button class="edit-btn" onclick="editKg('kg_8_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_8_1"><span class="kg-val" id="kg_8_1">70 kg</span><button class="edit-btn" onclick="editKg('kg_8_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_8_2"><span class="kg-val" id="kg_8_2">80 kg</span><button class="edit-btn" onclick="editKg('kg_8_2')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_8_3"><span class="kg-val" id="kg_8_3">85 kg</span><button class="edit-btn" onclick="editKg('kg_8_3')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">3-1-2</td><td class="rs">2 min</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Horizontal Leg Press <span class="badge bk">KNEE</span> <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: bilateral quad and glute strength — foundation for running, jumping, and cutting.</div>
+            <div class="nt">Feet mid-platform. Stop 10° before full knee extension — never lock out. Lower slowly over 3 seconds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="w_0_0">60 kg</span><button class="edit-btn" onclick="editKg('w_0_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="w_0_1">70 kg</span><button class="edit-btn" onclick="editKg('w_0_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="w_0_2">80 kg</span><button class="edit-btn" onclick="editKg('w_0_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 6 reps</span><span class="sl-weight" id="w_0_3">85 kg</span><button class="edit-btn" onclick="editKg('w_0_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-2</td><td class="rs">2 min</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Goblet Squat <span class="badge bn">NEW</span> <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: quad strength with upright torso — trains you out of the forward lean caused by tight hip flexors from sitting all day. Also safe for your disc because the torso stays tall.</div>
-          <div class="nt">DB held at chest with both hands. Knees track over toes. Chest stays tall throughout. Lower over 3 seconds.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_9_0"><span class="kg-val" id="kg_9_0">12 kg</span><button class="edit-btn" onclick="editKg('kg_9_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_9_1"><span class="kg-val" id="kg_9_1">16 kg</span><button class="edit-btn" onclick="editKg('kg_9_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_9_2"><span class="kg-val" id="kg_9_2">20 kg</span><button class="edit-btn" onclick="editKg('kg_9_2')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">3-1-1</td><td class="rs">90 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Goblet Squat <span class="badge bn">NEW</span> <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: quad strength with upright torso — trains you out of the forward lean caused by tight hip flexors from sitting all day. Also safe for your disc.</div>
+            <div class="nt">DB held at chest with both hands. Knees track over toes. Chest stays tall. Lower over 3 seconds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="w_1_0">12 kg</span><button class="edit-btn" onclick="editKg('w_1_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="w_1_1">16 kg</span><button class="edit-btn" onclick="editKg('w_1_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="w_1_2">20 kg</span><button class="edit-btn" onclick="editKg('w_1_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-1</td><td class="rs">90 s</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Bulgarian Split Squat — Quad Version <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: single-leg quad strength — most direct exercise for ACL re-injury prevention and cutting ability. Quad version: front foot closer to the rear foot, torso more upright, knee travels further forward over toes.</div>
-          <div class="nt">Rear foot 30–35 cm elevated. Front foot closer in. Drive through the ball of your front foot (not heel — heel emphasis is the glute version on Sunday). Lower over 3 seconds. Form is everything — weight is secondary.</div>
-        </td>
-        <td class="sr">3 × 8</td><td class="kg"><span class="kg-wrap" data-id="kg_10_0"><span class="kg-val" id="kg_10_0">4 kg/side</span><button class="edit-btn" onclick="editKg('kg_10_0')" title="Edit weight">✏️</button></span></td><td class="tp">3-1-1</td><td class="rs">90 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Bulgarian Split Squat — Quad <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: single-leg quad strength — most direct exercise for ACL re-injury prevention. Quad version: front foot closer, torso upright, knee travels forward over toes.</div>
+            <div class="nt">Rear foot 30–35 cm elevated. Drive through the ball of your front foot. Lower over 3 seconds. Form is everything — weight is secondary.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 8 reps</span><span class="sl-weight" id="w_2_0">4 kg/side</span><button class="edit-btn" onclick="editKg('w_2_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 8 reps</span><span class="sl-weight" id="w_2_1">4 kg/side</span><button class="edit-btn" onclick="editKg('w_2_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="w_2_2">4 kg/side</span><button class="edit-btn" onclick="editKg('w_2_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-1</td><td class="rs">90 s</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Single-Leg Leg Extension <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: isolated quad eccentric strength — the 3-sec lowering phase (lowering the weight over 3 seconds) is the primary ACL rehab stimulus. This rebuilds the quad control that was lost after surgery.</div>
-          <div class="nt">Lift in 1 sec. Lower over 3 seconds — count it. Both legs exact same weight. If left moves more, drop it to match right.</div>
-        </td>
-        <td class="sr">4 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_11_0"><span class="kg-val" id="kg_11_0">15 kg each</span><button class="edit-btn" onclick="editKg('kg_11_0')" title="Edit weight">✏️</button></span></td><td class="tp">1-1-3</td><td class="rs">75 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Single-Leg Leg Extension <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: isolated quad eccentric strength — the 3-sec lowering phase is the primary ACL rehab stimulus.</div>
+            <div class="nt">Lift in 1 sec. Lower over 3 seconds — count it. Both legs exact same weight.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="w_3_0">15 kg each</span><button class="edit-btn" onclick="editKg('w_3_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="w_3_1">15 kg each</span><button class="edit-btn" onclick="editKg('w_3_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="w_3_2">15 kg each</span><button class="edit-btn" onclick="editKg('w_3_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 12 reps</span><span class="sl-weight" id="w_3_3">15 kg each</span><button class="edit-btn" onclick="editKg('w_3_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">1-1-3</td><td class="rs">75 s</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Adductor Machine <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: medial knee stability — supports the inside of the knee, critical after meniscus repair. Repeated Wednesday and Sunday intentionally.</div>
-          <div class="nt">Full range of motion. Controlled return — don't let it spring back.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_12_0"><span class="kg-val" id="kg_12_0">20 kg</span><button class="edit-btn" onclick="editKg('kg_12_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Adductor Machine <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: medial knee stability — supports the inside of the knee, critical after meniscus repair.</div>
+            <div class="nt">Full range of motion. Controlled return.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="w_4_0">20 kg</span><button class="edit-btn" onclick="editKg('w_4_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="w_4_1">20 kg</span><button class="edit-btn" onclick="editKg('w_4_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="w_4_2">20 kg</span><button class="edit-btn" onclick="editKg('w_4_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Abductor Machine <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: hip and glute medius strength — controls lateral knee alignment when running and cutting. Weak glute med = knee collapses inward on landing, which is how ACL re-injuries happen.</div>
-          <div class="nt">No momentum. Controlled return.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_13_0"><span class="kg-val" id="kg_13_0">35 kg</span><button class="edit-btn" onclick="editKg('kg_13_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Abductor Machine <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: hip and glute medius strength — controls lateral knee alignment when running and cutting.</div>
+            <div class="nt">No momentum. Controlled return.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="w_5_0">35 kg</span><button class="edit-btn" onclick="editKg('w_5_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="w_5_1">35 kg</span><button class="edit-btn" onclick="editKg('w_5_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="w_5_2">35 kg</span><button class="edit-btn" onclick="editKg('w_5_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
 
-      <tr>
-        <td>
-          <div class="en">Calf Raise <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: calf strength and ankle stability — calves absorb every jump landing. Repeated Wednesday and Sunday intentionally because calves recover fast and need high frequency.</div>
-          <div class="nt">Lower heel fully for 3 seconds (full ROM = heel below platform level). Pause 2 sec at top.</div>
-        </td>
-        <td class="sr">4 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_14_0"><span class="kg-val" id="kg_14_0">BW + 20 kg</span><button class="edit-btn" onclick="editKg('kg_14_0')" title="Edit weight">✏️</button></span></td><td class="tp">3-2-1</td><td class="rs">60 s</td>
-      </tr>
+        <tr>
+          <td>
+            <div class="en">Calf Raise <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: calf strength and ankle stability. Repeated Wednesday and Sunday — calves recover fast and need high frequency.</div>
+            <div class="nt">Lower heel fully for 3 seconds. Pause 2 sec at top.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="w_6_0">BW + 20 kg</span><button class="edit-btn" onclick="editKg('w_6_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="w_6_1">BW + 20 kg</span><button class="edit-btn" onclick="editKg('w_6_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="w_6_2">BW + 20 kg</span><button class="edit-btn" onclick="editKg('w_6_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 15 reps</span><span class="sl-weight" id="w_6_3">BW + 20 kg</span><button class="edit-btn" onclick="editKg('w_6_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-2-1</td><td class="rs">60 s</td>
+        </tr>
+      </table>
+    </div>
 
-    </table>
-  </div>
+    <div class="sec">
+      <div class="stitle">Abs <span class="sm">6 min</span></div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Goal</th></tr>
+        <tr>
+          <td>
+            <div class="en">Pallof Press <span class="badge bn">NEW</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="nt">Stand sideways to cable. Press handle straight out from chest, hold 1 sec, return. Hips stay square — resist the rotation.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12/side</span><span class="sl-weight" id="w_7_0">Cable 10 kg</span><button class="edit-btn" onclick="editKg('w_7_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12/side</span><span class="sl-weight" id="w_7_1">Cable 10 kg</span><button class="edit-btn" onclick="editKg('w_7_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12/side</span><span class="sl-weight" id="w_7_2">Cable 10 kg</span><button class="edit-btn" onclick="editKg('w_7_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Anti-rotation core stability. Trains trunk to resist twisting forces during cutting. Also protects the lumbar spine.</div></td>
+        </tr>
+        <tr>
+          <td><div class="en">Russian Twist <span class="tb str">STRAIGHT</span></div></td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 20 reps</span><span class="sl-weight" id="w_8_0">5 kg</span><button class="edit-btn" onclick="editKg('w_8_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 20 reps</span><span class="sl-weight" id="w_8_1">5 kg</span><button class="edit-btn" onclick="editKg('w_8_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 20 reps</span><span class="sl-weight" id="w_8_2">5 kg</span><button class="edit-btn" onclick="editKg('w_8_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Oblique rotational strength — pairs with Pallof press to cover both resisting and creating rotation.</div></td>
+        </tr>
+      </table>
+    </div>
 
-  <div class="sec">
-    <div class="stitle">Abs <span class="sm">6 min</span></div>
-    <table>
-      <tr><th>Exercise</th><th>Sets×Reps</th><th>Load</th><th>Goal</th></tr>
-      <tr>
-        <td><div class="en">Pallof Press <span class="badge bn">NEW</span> <span class="tb str">STRAIGHT</span></div>
-        <div class="nt">Stand sideways to cable. Press handle straight out from chest, hold 1 sec, return. Hips stay perfectly square — resist the rotation. That resistance is the exercise.</div></td>
-        <td class="sr">3 × 12/side</td><td class="kg"><span class="kg-wrap" data-id="kg_15_0"><span class="kg-val" id="kg_15_0">Cable 10 kg</span><button class="edit-btn" onclick="editKg('kg_15_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Anti-rotation core stability — trains trunk to resist twisting forces during cutting and direction change. Also protects the lumbar spine directly relevant to your disc.</div></td>
-      </tr>
-      <tr>
-        <td><div class="en">Russian Twist <span class="tb str">STRAIGHT</span></div></td>
-        <td class="sr">3 × 20</td><td class="kg"><span class="kg-wrap" data-id="kg_16_0"><span class="kg-val" id="kg_16_0">5 kg</span><button class="edit-btn" onclick="editKg('kg_16_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Oblique rotational strength — pairs with Pallof press to cover both resisting and creating rotation.</div></td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Post-Session Stretch <span class="sm">8 min — mandatory for knee</span></div>
-    <div class="sr2"><span class="sn">Quad stretch — standing, each leg</span><span class="st2">45 s each</span></div>
-    <div class="sr2"><span class="sn">Kneeling hip flexor stretch</span><span class="st2">45 s each</span></div>
-    <div class="sr2"><span class="sn">Seated hamstring stretch, straight leg</span><span class="st2">45 s each</span></div>
-    <div class="sr2"><span class="sn">Calf stretch against wall</span><span class="st2">30 s each</span></div>
-    <div class="sr2"><span class="sn">Cat-cow — slow, controlled</span><span class="st2">10 reps · end every leg session with this</span></div>
-    <div class="box warn"><strong>KNEE CHECK:</strong> Next morning — any puffiness, warmth, or stiffness in right knee = reduce leg press by 10 kg and drop 1 set from all exercises next session. Not negotiable.</div>
-  </div>
+    <div class="sec">
+      <div class="stitle">Post-Session Stretch <span class="sm">8 min — mandatory for knee</span></div>
+      <div class="sr2"><span class="sn">Quad stretch — standing, each leg</span><span class="st2">45 s each</span></div>
+      <div class="sr2"><span class="sn">Kneeling hip flexor stretch</span><span class="st2">45 s each</span></div>
+      <div class="sr2"><span class="sn">Seated hamstring stretch, straight leg</span><span class="st2">45 s each</span></div>
+      <div class="sr2"><span class="sn">Calf stretch against wall</span><span class="st2">30 s each</span></div>
+      <div class="sr2"><span class="sn">Cat-cow — slow, controlled</span><span class="st2">10 reps</span></div>
+      <div class="box warn"><strong>KNEE CHECK:</strong> Next morning — any puffiness, warmth, or stiffness in right knee = reduce leg press by 10 kg and drop 1 set from all exercises next session. Not negotiable.</div>
+    </div>
   </div>
 </div>
 
-<!-- ═══ DAY: FRIDAY ═══ -->
+
+<!-- FRIDAY -->
 <div class="day-view" id="day-friday">
   <div class="day-inner">
-      <div class="dh">
-    <div class="dl">Friday / Saturday</div>
-    <div class="dt">Back &amp; Biceps</div>
-    <div class="df">Vertical Pull · Horizontal Pull · Lower Back · Posture · Arms</div>
-    <div class="dm">
-      <span class="mc">⏱ 60–65 min</span>
-      <span class="mc r">🏃 Run after lifting</span>
-      <span class="mc">8 exercises</span>
+    <div class="dh">
+      <div class="dl">Friday / Saturday</div>
+      <div class="dt">Back &amp; Biceps</div>
+      <div class="df">Vertical Pull · Horizontal Pull · Lower Back · Posture · Arms</div>
+      <div class="dm">
+        <span class="mc">&#9201; 60&#8211;65 min</span>
+        <span class="mc r">&#127939; Run after lifting</span>
+        <span class="mc">8 exercises</span>
+      </div>
     </div>
-  </div>
 
-  <div class="sec">
-    <div class="stitle">Warm-Up <span class="sm">8 min — all at start of session</span></div>
-    <div class="wr"><span class="wn">Treadmill walk</span><span class="wd">5 min</span></div>
-    <div class="wr"><span class="wn">Dead hang from pull-up bar</span><span class="wd">2 × 20 s — spinal decompression, important for disc</span></div>
-    <div class="wr"><span class="wn">Scapular pull-ups</span><span class="wd">2 × 10 — depress shoulder blades only, no elbow bend</span></div>
-    <div class="wr"><span class="wn">Wide-grip pulldown — warm-up &nbsp;<span style="color:#444;font-size:10px">(done right before pulldown working sets)</span></span><span class="wd"><span class="wk">20 kg</span> × 12, slow</span></div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Main Work</div>
-    <table>
-      <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Weight</th><th>Tempo</th><th>Rest</th></tr>
-
-      <tr>
-        <td>
-          <div class="en">Wide-Grip Lat Pulldown <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: lat width and upper back thickness. Also pulls shoulders back against the rounded-forward desk posture.</div>
-          <div class="nt">Full ROM = arms fully extended at top (full stretch), pull until bar reaches upper chest. Drive elbows toward hips. Slight lean back.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps<br>Set 4: 6 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_17_0"><span class="kg-val" id="kg_17_0">22 kg</span><button class="edit-btn" onclick="editKg('kg_17_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_17_1"><span class="kg-val" id="kg_17_1">26 kg</span><button class="edit-btn" onclick="editKg('kg_17_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_17_2"><span class="kg-val" id="kg_17_2">30 kg</span><button class="edit-btn" onclick="editKg('kg_17_2')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_17_3"><span class="kg-val" id="kg_17_3">34 kg</span><button class="edit-btn" onclick="editKg('kg_17_3')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">2-1-3</td><td class="rs">90 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Neutral-Grip Pulldown <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: lower lat and mid-back thickness. Different line of pull from wide grip — hits a different part of the back. Not redundant.</div>
-          <div class="nt">Palms face each other. Elbows pull straight down toward hips.</div>
-        </td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_18_0"><span class="kg-val" id="kg_18_0">30 kg</span><button class="edit-btn" onclick="editKg('kg_18_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-3</td><td class="rs">75 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Meadows Row <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: upper back and rear delt thickness. Uses a barbell in a landmine (one end on floor, one end you hold). High elbow position hits upper back area that pulldowns miss.</div>
-          <div class="nt">Not the same as DB row — Meadows row uses a barbell at an angle, not a dumbbell straight down. If your gym has no landmine, replace with seated cable row.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_19_0"><span class="kg-val" id="kg_19_0">Your start weight</span><button class="edit-btn" onclick="editKg('kg_19_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_19_1"><span class="kg-val" id="kg_19_1">+2.5 kg</span><button class="edit-btn" onclick="editKg('kg_19_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_19_2"><span class="kg-val" id="kg_19_2">+2.5 kg</span><button class="edit-btn" onclick="editKg('kg_19_2')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">2-1-2</td><td class="rs">75 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Single-Arm Dumbbell Row <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: mid-lat thickness through full range. Different from Meadows row — this pulls vertically toward the hip, Meadows row pulls at an upward angle toward the shoulder. Different stimulus, not redundant.</div>
-          <div class="nt">Brace knee and hand on bench. Lower DB until arm is fully extended (full ROM). Row to hip, not armpit. Full stretch at bottom is where the growth happens.</div>
-        </td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_20_0"><span class="kg-val" id="kg_20_0">16–20 kg</span><button class="edit-btn" onclick="editKg('kg_20_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Face Pull <span class="badge bn">NEW</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: rear deltoid and external rotator strength — the single most important posture-fixing exercise in this program. Directly pulls your shoulder blades together and rotates shoulders back, reversing the rounded-forward position from desk work.</div>
-          <div class="nt">Cable at eye height, rope attachment. Pull rope to forehead — elbows flare high and wide. No momentum. Hold 1 sec at face.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_21_0"><span class="kg-val" id="kg_21_0">10 kg</span><button class="edit-btn" onclick="editKg('kg_21_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-2-2</td><td class="rs">45 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Back Extension Machine <span class="badge bd">DISC</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: erector spinae strength — rebuilds the lower back musculature that weakened from sitting. Stronger lower back = less desk pain over time, safer deadlifts. Appears Friday and Sunday intentionally because your lower back needs twice-weekly work.</div>
-          <div class="nt">Lie face-down, hips on the pad, ankles anchored. Lower torso down, then raise back up until body is perfectly flat — like a plank. <strong style="color:#ef5350">STOP THERE. Do not go one degree past flat. No hyperextension. Ever.</strong> For your disc, flat = the endpoint, not a waypoint. No weight on chest — bodyweight only until further notice. Progress by slowing tempo and changing arm position, not by adding load.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_22_0"><span class="kg-val" id="kg_22_0">Bodyweight</span><button class="edit-btn" onclick="editKg('kg_22_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Wide Pull-Up (weighted) <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: raw lat and upper back strength — the most honest pulling strength indicator. If 28 kg feels too heavy, drop to bodyweight. Form first.</div>
-          <div class="nt">Dead hang at bottom (full ROM). Pull until chin clears bar. Lower over 3 seconds.</div>
-        </td>
-        <td class="sr">3 × 6</td><td class="kg"><span class="kg-wrap" data-id="kg_23_0"><span class="kg-val" id="kg_23_0">28 kg</span><button class="edit-btn" onclick="editKg('kg_23_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-0-3</td><td class="rs">2 min</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">DB Preacher Curl <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: biceps peak. Preacher pad prevents any body-swing cheating.</div>
-          <div class="nt">Elbow fixed on pad. Lower fully (full ROM = arm nearly straight). Supinate wrist at top.</div>
-        </td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_24_0"><span class="kg-val" id="kg_24_0">Your working weight</span><button class="edit-btn" onclick="editKg('kg_24_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Preacher Hammer Curl <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: brachialis thickness — the muscle under the bicep that pushes it up. Standard curls don't reach it well. Neutral grip throughout.</div>
-        </td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_25_0"><span class="kg-val" id="kg_25_0">Your working weight</span><button class="edit-btn" onclick="editKg('kg_25_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-    </table>
-    <div class="box disc"><strong>Disc note:</strong> The dead hang in warm-up decompresses the lumbar spine before loading it. The back extension stops at flat — not hyperextended. You were previously hyperextending with 10 kg on your chest. That was the likely cause of your lower back stiffness, not the deadlifts. Neutral spine endpoint, bodyweight only, always.</div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Abs <span class="sm">6 min</span></div>
-    <table>
-      <tr><th>Exercise</th><th>Sets×Reps</th><th>Load</th><th>Goal</th></tr>
-      <tr>
-        <td><div class="en">Cable Crunch <span class="tb str">STRAIGHT</span></div>
-        <div class="nt">Kneel facing cable. Rope attached at top. Pull rope to knees by crunching — hips stay still. Spine-safe for disc history.</div></td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_26_0"><span class="kg-val" id="kg_26_0">15 kg</span><button class="edit-btn" onclick="editKg('kg_26_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Upper ab strength. Cable crunch loads the abs without the flexion stress on the lower back that flat crunches cause.</div></td>
-      </tr>
-      <tr>
-        <td><div class="en">Leg Raise <span class="tb str">STRAIGHT</span></div></td>
-        <td class="sr">3 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_27_0"><span class="kg-val" id="kg_27_0">Bodyweight</span><button class="edit-btn" onclick="editKg('kg_27_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Lower ab strength.</div></td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Post-Session Stretch <span class="sm">5 min</span></div>
-    <div class="sr2"><span class="sn">Lat stretch — grab upright, lean away</span><span class="st2">45 s each side</span></div>
-    <div class="sr2"><span class="sn">Child's pose</span><span class="st2">60 s</span></div>
-    <div class="sr2"><span class="sn">Standing biceps stretch — arm behind, palm out</span><span class="st2">30 s each</span></div>
-    <div class="sr2"><span class="sn">Doorway chest stretch</span><span class="st2">30 s each side</span></div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Running <span class="sm">after stretch</span></div>
-    <div class="rb">
-      <div class="rr"><span class="rl">Same rules as Tuesday</span><span class="rv">9 min → 9:30 next if no swelling</span></div>
-      <div class="rr"><span class="rl">Extra check</span><span class="rv">Right knee feels different from left mid-run = stop immediately</span></div>
+    <div class="sec">
+      <div class="stitle">Warm-Up <span class="sm">8 min</span></div>
+      <div class="wr"><span class="wn">Treadmill walk</span><span class="wd">5 min</span></div>
+      <div class="wr"><span class="wn">Dead hang from pull-up bar</span><span class="wd">2 × 20 s — spinal decompression, important for disc</span></div>
+      <div class="wr"><span class="wn">Scapular pull-ups</span><span class="wd">2 × 10 — depress shoulder blades only, no elbow bend</span></div>
+      <div class="wr"><span class="wn">Wide-grip pulldown warm-up <span style="color:#444;font-size:10px">(right before pulldown working sets)</span></span><span class="wd"><span class="wk">20 kg</span> × 12, slow</span></div>
     </div>
-  </div>
+
+    <div class="sec">
+      <div class="stitle">Main Work</div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Tempo</th><th>Rest</th></tr>
+
+        <tr>
+          <td>
+            <div class="en">Wide-Grip Lat Pulldown <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: lat width and upper back thickness. Also pulls shoulders back against the rounded-forward desk posture.</div>
+            <div class="nt">Full ROM = arms fully extended at top, pull until bar reaches upper chest. Drive elbows toward hips. Slight lean back.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_0_0">22 kg</span><button class="edit-btn" onclick="editKg('f_0_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="f_0_1">26 kg</span><button class="edit-btn" onclick="editKg('f_0_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="f_0_2">30 kg</span><button class="edit-btn" onclick="editKg('f_0_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 6 reps</span><span class="sl-weight" id="f_0_3">34 kg</span><button class="edit-btn" onclick="editKg('f_0_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-3</td><td class="rs">90 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Neutral-Grip Pulldown <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: lower lat and mid-back thickness. Different line of pull from wide grip — hits a different part of the back.</div>
+            <div class="nt">Palms face each other. Elbows pull straight down toward hips.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_1_0">30 kg</span><button class="edit-btn" onclick="editKg('f_1_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="f_1_1">30 kg</span><button class="edit-btn" onclick="editKg('f_1_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="f_1_2">30 kg</span><button class="edit-btn" onclick="editKg('f_1_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-3</td><td class="rs">75 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Meadows Row <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: upper back and rear delt thickness. High elbow position hits upper back area that pulldowns miss.</div>
+            <div class="nt">Uses a barbell at an angle (landmine). If no landmine, replace with seated cable row.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_2_0">Your start</span><button class="edit-btn" onclick="editKg('f_2_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="f_2_1">+2.5 kg</span><button class="edit-btn" onclick="editKg('f_2_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="f_2_2">+2.5 kg</span><button class="edit-btn" onclick="editKg('f_2_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">75 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Single-Arm Dumbbell Row <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: mid-lat thickness through full range. Pulls toward the hip, not the armpit like Meadows row — different stimulus.</div>
+            <div class="nt">Brace knee and hand on bench. Lower DB until arm fully extended. Row to hip. Full stretch at bottom is where the growth happens.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_3_0">16–20 kg</span><button class="edit-btn" onclick="editKg('f_3_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="f_3_1">16–20 kg</span><button class="edit-btn" onclick="editKg('f_3_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="f_3_2">16–20 kg</span><button class="edit-btn" onclick="editKg('f_3_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Face Pull <span class="badge bn">NEW</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: rear deltoid and external rotator strength — the single most important posture-fixing exercise in this program.</div>
+            <div class="nt">Cable at eye height, rope attachment. Pull rope to forehead — elbows flare high and wide. No momentum. Hold 1 sec at face.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="f_4_0">10 kg</span><button class="edit-btn" onclick="editKg('f_4_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="f_4_1">10 kg</span><button class="edit-btn" onclick="editKg('f_4_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="f_4_2">10 kg</span><button class="edit-btn" onclick="editKg('f_4_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-2-2</td><td class="rs">45 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Back Extension Machine <span class="badge bd">DISC</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: erector spinae strength — rebuilds the lower back musculature that weakened from sitting.</div>
+            <div class="nt">Raise until body is perfectly flat. <strong style="color:#ef5350">STOP THERE. No hyperextension. Ever.</strong> Bodyweight only until further notice.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="f_5_0">Bodyweight</span><button class="edit-btn" onclick="editKg('f_5_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="f_5_1">Bodyweight</span><button class="edit-btn" onclick="editKg('f_5_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="f_5_2">Bodyweight</span><button class="edit-btn" onclick="editKg('f_5_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Wide Pull-Up (weighted) <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: raw lat and upper back strength. If 28 kg feels too heavy, drop to bodyweight. Form first.</div>
+            <div class="nt">Dead hang at bottom. Pull until chin clears bar. Lower over 3 seconds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 6 reps</span><span class="sl-weight" id="f_6_0">28 kg</span><button class="edit-btn" onclick="editKg('f_6_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 6 reps</span><span class="sl-weight" id="f_6_1">28 kg</span><button class="edit-btn" onclick="editKg('f_6_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 6 reps</span><span class="sl-weight" id="f_6_2">28 kg</span><button class="edit-btn" onclick="editKg('f_6_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-0-3</td><td class="rs">2 min</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">DB Preacher Curl <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: biceps peak. Preacher pad prevents any body-swing cheating.</div>
+            <div class="nt">Elbow fixed on pad. Lower fully — arm nearly straight at bottom. Supinate wrist at top.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_7_0">Your weight</span><button class="edit-btn" onclick="editKg('f_7_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="f_7_1">Your weight</span><button class="edit-btn" onclick="editKg('f_7_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="f_7_2">Your weight</span><button class="edit-btn" onclick="editKg('f_7_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Preacher Hammer Curl <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: brachialis thickness — the muscle under the bicep that pushes it up. Neutral grip throughout.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_8_0">Your weight</span><button class="edit-btn" onclick="editKg('f_8_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="f_8_1">Your weight</span><button class="edit-btn" onclick="editKg('f_8_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="f_8_2">Your weight</span><button class="edit-btn" onclick="editKg('f_8_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+      </table>
+      <div class="box disc"><strong>Disc note:</strong> Dead hang decompresses the lumbar spine before loading it. Back extension stops at flat — not hyperextended. Neutral spine endpoint, bodyweight only, always.</div>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Abs <span class="sm">6 min</span></div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Goal</th></tr>
+        <tr>
+          <td>
+            <div class="en">Cable Crunch <span class="tb str">STRAIGHT</span></div>
+            <div class="nt">Kneel facing cable. Rope at top. Pull rope to knees by crunching — hips stay still.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="f_9_0">15 kg</span><button class="edit-btn" onclick="editKg('f_9_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="f_9_1">15 kg</span><button class="edit-btn" onclick="editKg('f_9_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="f_9_2">15 kg</span><button class="edit-btn" onclick="editKg('f_9_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Upper ab strength without lower back flexion stress.</div></td>
+        </tr>
+        <tr>
+          <td><div class="en">Leg Raise <span class="tb str">STRAIGHT</span></div></td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="f_10_0">Bodyweight</span><button class="edit-btn" onclick="editKg('f_10_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="f_10_1">Bodyweight</span><button class="edit-btn" onclick="editKg('f_10_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="f_10_2">Bodyweight</span><button class="edit-btn" onclick="editKg('f_10_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Lower ab strength.</div></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Post-Session Stretch <span class="sm">5 min</span></div>
+      <div class="sr2"><span class="sn">Lat stretch — grab upright, lean away</span><span class="st2">45 s each side</span></div>
+      <div class="sr2"><span class="sn">Child's pose</span><span class="st2">60 s</span></div>
+      <div class="sr2"><span class="sn">Standing biceps stretch — arm behind, palm out</span><span class="st2">30 s each</span></div>
+      <div class="sr2"><span class="sn">Doorway chest stretch</span><span class="st2">30 s each side</span></div>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Running <span class="sm">after stretch</span></div>
+      <div class="rb">
+        <div class="rr"><span class="rl">Same rules as Tuesday</span><span class="rv">9 min &#8594; 9:30 next if no swelling</span></div>
+        <div class="rr"><span class="rl">Extra check</span><span class="rv">Right knee feels different from left mid-run = stop immediately</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- ═══ DAY: SUNDAY ═══ -->
+
+<!-- SUNDAY -->
 <div class="day-view" id="day-sunday">
   <div class="day-inner">
-      <div class="dh">
-    <div class="dl">Sunday</div>
-    <div class="dt">Legs B — Posterior Chain</div>
-    <div class="df">Hamstrings · Glutes · Lower Back · Eccentric Strength · Sprint &amp; Jump Prep</div>
-    <div class="dm">
-      <span class="mc">⏱ 60 min</span>
-      <span class="mc">🚫 No running</span>
-      <span class="mc">7 exercises</span>
+    <div class="dh">
+      <div class="dl">Sunday</div>
+      <div class="dt">Legs B &#8212; Posterior Chain</div>
+      <div class="df">Hamstrings · Glutes · Lower Back · Eccentric Strength · Sprint &amp; Jump Prep</div>
+      <div class="dm">
+        <span class="mc">&#9201; 60 min</span>
+        <span class="mc">&#128683; No running</span>
+        <span class="mc">7 exercises</span>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Warm-Up <span class="sm">10 min</span></div>
+      <div class="wr"><span class="wn">Stationary bike</span><span class="wd">5 min, easy</span></div>
+      <div class="wr"><span class="wn">Glute bridge — bodyweight</span><span class="wd">1 × 15, hold top 2 sec</span></div>
+      <div class="wr"><span class="wn">Good morning — bodyweight</span><span class="wd">1 × 12, hinge from hips, soft knee</span></div>
+      <div class="wr"><span class="wn">RDL warm-up <span style="color:#444;font-size:10px">(right before RDL working sets)</span></span><span class="wd"><span class="wk">30 kg</span> × 8, feel the hamstring stretch</span></div>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Main Work</div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Tempo</th><th>Rest</th></tr>
+
+        <tr>
+          <td>
+            <div class="en">Romanian Deadlift <span class="badge bd">DISC</span> <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: hamstring and glute strength through hip hinge. Safest heavy hip hinge for disc history — spine stays neutral, no rounding, no floor pickup.</div>
+            <div class="nt">Hip hinge — not a squat. Bar slides down close to legs. Stop before lower back rounds. Stop immediately if back rounds.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="s_0_0">30 kg</span><button class="edit-btn" onclick="editKg('s_0_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="s_0_1">35 kg</span><button class="edit-btn" onclick="editKg('s_0_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="s_0_2">40 kg</span><button class="edit-btn" onclick="editKg('s_0_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 6 reps</span><span class="sl-weight" id="s_0_3">45 kg</span><button class="edit-btn" onclick="editKg('s_0_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-1</td><td class="rs">2 min</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Conventional Deadlift <span class="badge bk">KNEE</span> <span class="badge bd">DISC</span> <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: total posterior chain strength. Currently in technique phase — not max effort. Clean reps only.</div>
+            <div class="nt">Brace before every rep. Stop if back rounds at any point.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 8 reps</span><span class="sl-weight" id="s_1_0">50 kg</span><button class="edit-btn" onclick="editKg('s_1_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 6 reps</span><span class="sl-weight" id="s_1_1">57.5 kg</span><button class="edit-btn" onclick="editKg('s_1_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 4 reps</span><span class="sl-weight" id="s_1_2">62.5 kg</span><button class="edit-btn" onclick="editKg('s_1_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">2 min</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Hip Thrust Machine <span class="tb ramp">RAMP</span></div>
+            <div class="goal">Goal: maximum glute activation — most effective glute exercise available. Builds the power behind every sprint and jump. Zero knee compression, zero spinal load.</div>
+            <div class="nt">Drive through heels. Squeeze glutes hard at top, hold 1 sec.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="s_2_0">30 kg</span><button class="edit-btn" onclick="editKg('s_2_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 10 reps</span><span class="sl-weight" id="s_2_1">35 kg</span><button class="edit-btn" onclick="editKg('s_2_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="s_2_2">40 kg</span><button class="edit-btn" onclick="editKg('s_2_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 6 reps</span><span class="sl-weight" id="s_2_3">45 kg</span><button class="edit-btn" onclick="editKg('s_2_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-2-1</td><td class="rs">90 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Bulgarian Split Squat — Glute <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: single-leg glute and hamstring strength. Glute version: front foot further forward, slight forward lean, drive through heel.</div>
+            <div class="nt">Front foot further from rear foot than Wednesday. Drive through your heel — that heel drive shifts load to the glute.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 8 reps</span><span class="sl-weight" id="s_3_0">4 kg/side</span><button class="edit-btn" onclick="editKg('s_3_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 8 reps</span><span class="sl-weight" id="s_3_1">4 kg/side</span><button class="edit-btn" onclick="editKg('s_3_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 8 reps</span><span class="sl-weight" id="s_3_2">4 kg/side</span><button class="edit-btn" onclick="editKg('s_3_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-1-1</td><td class="rs">90 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Single-Leg Hamstring Curl <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: eccentric hamstring strength — the 4-sec lowering phase is the primary ACL protection mechanism.</div>
+            <div class="nt">Curl up in 1 sec. Lower over 4 seconds — count it out loud if needed. Both legs exact same weight.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12 reps</span><span class="sl-weight" id="s_4_0">20 kg each</span><button class="edit-btn" onclick="editKg('s_4_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12 reps</span><span class="sl-weight" id="s_4_1">20 kg each</span><button class="edit-btn" onclick="editKg('s_4_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12 reps</span><span class="sl-weight" id="s_4_2">20 kg each</span><button class="edit-btn" onclick="editKg('s_4_2')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 4: 12 reps</span><span class="sl-weight" id="s_4_3">20 kg each</span><button class="edit-btn" onclick="editKg('s_4_3')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">1-1-4</td><td class="rs">75 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Back Extension Machine <span class="badge bd">DISC</span> <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: erector and glute strength. Repeated from Friday — your lower back needs twice-weekly direct work.</div>
+            <div class="nt">Raise until body is perfectly flat. <strong style="color:#ef5350">Stop there. No hyperextension. No weight.</strong></div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="s_5_0">Bodyweight</span><button class="edit-btn" onclick="editKg('s_5_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="s_5_1">Bodyweight</span><button class="edit-btn" onclick="editKg('s_5_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="s_5_2">Bodyweight</span><button class="edit-btn" onclick="editKg('s_5_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Adductor Machine <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: medial knee stability. Repeated from Wednesday — both sessions reinforce the inside of the knee post-meniscus repair.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="s_6_0">20 kg</span><button class="edit-btn" onclick="editKg('s_6_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="s_6_1">20 kg</span><button class="edit-btn" onclick="editKg('s_6_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="s_6_2">20 kg</span><button class="edit-btn" onclick="editKg('s_6_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">2-1-2</td><td class="rs">60 s</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="en">Calf Raise <span class="tb str">STRAIGHT</span></div>
+            <div class="goal">Goal: calf strength and ankle stability. Repeated from Wednesday — high frequency for sport prep.</div>
+          </td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 15 reps</span><span class="sl-weight" id="s_7_0">BW + 20 kg</span><button class="edit-btn" onclick="editKg('s_7_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 15 reps</span><span class="sl-weight" id="s_7_1">BW + 20 kg</span><button class="edit-btn" onclick="editKg('s_7_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 15 reps</span><span class="sl-weight" id="s_7_2">BW + 20 kg</span><button class="edit-btn" onclick="editKg('s_7_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td class="tp">3-2-1</td><td class="rs">60 s</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Abs <span class="sm">6 min</span></div>
+      <table>
+        <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Goal</th></tr>
+        <tr>
+          <td><div class="en">Pallof Press <span class="tb str">STRAIGHT</span></div></td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 12/side</span><span class="sl-weight" id="s_8_0">Cable 10 kg</span><button class="edit-btn" onclick="editKg('s_8_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 12/side</span><span class="sl-weight" id="s_8_1">Cable 10 kg</span><button class="edit-btn" onclick="editKg('s_8_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 12/side</span><span class="sl-weight" id="s_8_2">Cable 10 kg</span><button class="edit-btn" onclick="editKg('s_8_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Anti-rotation core stability. Especially important after deadlifts — reinforces spinal control under fatigue.</div></td>
+        </tr>
+        <tr>
+          <td><div class="en">Russian Twist <span class="tb str">STRAIGHT</span></div></td>
+          <td class="sr">
+            <div class="set-line"><span class="sl-label">Set 1: 20 reps</span><span class="sl-weight" id="s_9_0">5 kg</span><button class="edit-btn" onclick="editKg('s_9_0')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 2: 20 reps</span><span class="sl-weight" id="s_9_1">5 kg</span><button class="edit-btn" onclick="editKg('s_9_1')">&#9999;&#65039;</button></div>
+            <div class="set-line"><span class="sl-label">Set 3: 20 reps</span><span class="sl-weight" id="s_9_2">5 kg</span><button class="edit-btn" onclick="editKg('s_9_2')">&#9999;&#65039;</button></div>
+          </td>
+          <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Oblique rotational strength for sport movement.</div></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sec">
+      <div class="stitle">Post-Session Stretch <span class="sm">8 min — mandatory</span></div>
+      <div class="sr2"><span class="sn">Standing hamstring stretch, foot elevated</span><span class="st2">45 s each</span></div>
+      <div class="sr2"><span class="sn">Lying glute stretch, figure-4</span><span class="st2">60 s each</span></div>
+      <div class="sr2"><span class="sn">Kneeling hip flexor stretch</span><span class="st2">45 s each</span></div>
+      <div class="sr2"><span class="sn">Calf stretch — straight knee then bent knee</span><span class="st2">30 s × 2 each</span></div>
+      <div class="sr2"><span class="sn">Cat-cow — slow, controlled</span><span class="st2">10 reps</span></div>
+      <div class="box warn"><strong>KNEE CHECK:</strong> Same rule every week — right knee swelling next morning = reduce load next session immediately.</div>
+      <div class="box disc"><strong>DISC NOTE:</strong> Cat-cow at end of every session maintains disc mobility and reduces next-day stiffness. Not optional.</div>
     </div>
   </div>
-
-  <div class="sec">
-    <div class="stitle">Warm-Up <span class="sm">10 min — all at start of session</span></div>
-    <div class="wr"><span class="wn">Stationary bike</span><span class="wd">5 min, easy</span></div>
-    <div class="wr"><span class="wn">Glute bridge — bodyweight</span><span class="wd">1 × 15, hold top 2 sec</span></div>
-    <div class="wr"><span class="wn">Good morning — bodyweight</span><span class="wd">1 × 12, hinge from hips, soft knee</span></div>
-    <div class="wr"><span class="wn">RDL — warm-up &nbsp;<span style="color:#444;font-size:10px">(done right before RDL working sets)</span></span><span class="wd"><span class="wk">30 kg</span> × 8, feel the hamstring stretch</span></div>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Main Work</div>
-    <table>
-      <tr><th>Exercise</th><th>Sets &amp; Reps</th><th>Weight</th><th>Tempo</th><th>Rest</th></tr>
-
-      <tr>
-        <td>
-          <div class="en">Romanian Deadlift <span class="badge bd">DISC</span> <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: hamstring and glute strength through hip hinge. Safest heavy hip hinge for disc history — spine stays neutral, no rounding, no floor pickup.</div>
-          <div class="nt">Hip hinge — not a squat. Bar slides down close to legs. Full ROM = feel the hamstring stretch at bottom, stop before lower back rounds. Stop immediately if back rounds.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps<br>Set 4: 6 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_28_0"><span class="kg-val" id="kg_28_0">30 kg</span><button class="edit-btn" onclick="editKg('kg_28_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_28_1"><span class="kg-val" id="kg_28_1">35 kg</span><button class="edit-btn" onclick="editKg('kg_28_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_28_2"><span class="kg-val" id="kg_28_2">40 kg</span><button class="edit-btn" onclick="editKg('kg_28_2')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_28_3"><span class="kg-val" id="kg_28_3">45 kg</span><button class="edit-btn" onclick="editKg('kg_28_3')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">3-1-1</td><td class="rs">2 min</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Conventional Deadlift <span class="badge bk">KNEE</span> <span class="badge bd">DISC</span> <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: total posterior chain strength. Currently in technique phase — not max effort. 3 sets, moderate weight, clean reps only.</div>
-          <div class="nt">Brace before every rep. Stop if back rounds at any point. This is not a test of max strength yet.</div>
-        </td>
-        <td class="sr">Set 1: 8 reps<br>Set 2: 6 reps<br>Set 3: 4 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_29_0"><span class="kg-val" id="kg_29_0">50 kg</span><button class="edit-btn" onclick="editKg('kg_29_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_29_1"><span class="kg-val" id="kg_29_1">57.5 kg</span><button class="edit-btn" onclick="editKg('kg_29_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_29_2"><span class="kg-val" id="kg_29_2">62.5 kg</span><button class="edit-btn" onclick="editKg('kg_29_2')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">2-1-2</td><td class="rs">2 min</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Hip Thrust Machine <span class="tb ramp">RAMP</span></div>
-          <div class="goal">Goal: maximum glute activation — the most effective glute exercise available. Builds the power behind every sprint and jump. Zero knee compression, zero spinal load.</div>
-          <div class="nt">Drive through heels. Squeeze glutes hard at top, hold 1 sec. You did 30 kg — start there and ramp up.</div>
-        </td>
-        <td class="sr">Set 1: 12 reps<br>Set 2: 10 reps<br>Set 3: 8 reps<br>Set 4: 6 reps</td>
-        <td class="kg"><span class="kg-wrap" data-id="kg_30_0"><span class="kg-val" id="kg_30_0">30 kg</span><button class="edit-btn" onclick="editKg('kg_30_0')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_30_1"><span class="kg-val" id="kg_30_1">35 kg</span><button class="edit-btn" onclick="editKg('kg_30_1')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_30_2"><span class="kg-val" id="kg_30_2">40 kg</span><button class="edit-btn" onclick="editKg('kg_30_2')" title="Edit weight">✏️</button></span><br><span class="kg-wrap" data-id="kg_30_3"><span class="kg-val" id="kg_30_3">45 kg</span><button class="edit-btn" onclick="editKg('kg_30_3')" title="Edit weight">✏️</button></span></td>
-        <td class="tp">2-2-1</td><td class="rs">90 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Bulgarian Split Squat — Glute Version <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: single-leg glute and hamstring strength. Glute version: front foot further forward, slight forward lean of torso, drive through heel. Different from Wednesday's quad version.</div>
-          <div class="nt">Front foot further from the rear foot than Wednesday. Slight forward torso lean. Drive through your heel (not ball of foot) when pushing back up — that heel drive is what shifts the load to the glute.</div>
-        </td>
-        <td class="sr">3 × 8</td><td class="kg"><span class="kg-wrap" data-id="kg_31_0"><span class="kg-val" id="kg_31_0">4 kg/side</span><button class="edit-btn" onclick="editKg('kg_31_0')" title="Edit weight">✏️</button></span></td><td class="tp">3-1-1</td><td class="rs">90 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Single-Leg Hamstring Curl <span class="badge bk">KNEE</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: eccentric hamstring strength — the 4-sec lowering phase is the primary ACL protection mechanism. Medical-grade rehab in the form of an exercise.</div>
-          <div class="nt">Curl up in 1 sec. Lower over 4 seconds — count it out loud if needed. Both legs exact same weight.</div>
-        </td>
-        <td class="sr">4 × 12</td><td class="kg"><span class="kg-wrap" data-id="kg_32_0"><span class="kg-val" id="kg_32_0">20 kg each</span><button class="edit-btn" onclick="editKg('kg_32_0')" title="Edit weight">✏️</button></span></td><td class="tp">1-1-4</td><td class="rs">75 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Back Extension Machine <span class="badge bd">DISC</span> <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: erector and glute strength. Repeated from Friday — your lower back needs twice-weekly direct work to reverse years of weakness from desk sitting.</div>
-          <div class="nt">Same as Friday — raise until body is perfectly flat. <strong style="color:#ef5350">Stop there. No hyperextension. No weight.</strong> Progression when bodyweight feels easy: slow the tempo to 3-3-3, then move arms from sides → crossed on chest → extended overhead. Each stage is harder without touching the load.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_33_0"><span class="kg-val" id="kg_33_0">Bodyweight</span><button class="edit-btn" onclick="editKg('kg_33_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Adductor Machine <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: medial knee stability. Repeated from Wednesday — both sessions reinforce the inside of the knee post-meniscus repair.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_34_0"><span class="kg-val" id="kg_34_0">20 kg</span><button class="edit-btn" onclick="editKg('kg_34_0')" title="Edit weight">✏️</button></span></td><td class="tp">2-1-2</td><td class="rs">60 s</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="en">Calf Raise <span class="tb str">STRAIGHT</span></div>
-          <div class="goal">Goal: calf strength and ankle stability. Repeated from Wednesday — calves recover fast and need high frequency for sport prep.</div>
-        </td>
-        <td class="sr">3 × 15</td><td class="kg"><span class="kg-wrap" data-id="kg_35_0"><span class="kg-val" id="kg_35_0">BW + 20 kg</span><button class="edit-btn" onclick="editKg('kg_35_0')" title="Edit weight">✏️</button></span></td><td class="tp">3-2-1</td><td class="rs">60 s</td>
-      </tr>
-
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Abs <span class="sm">6 min</span></div>
-    <table>
-      <tr><th>Exercise</th><th>Sets×Reps</th><th>Load</th><th>Goal</th></tr>
-      <tr>
-        <td><div class="en">Pallof Press <span class="tb str">STRAIGHT</span></div></td>
-        <td class="sr">3 × 12/side</td><td class="kg"><span class="kg-wrap" data-id="kg_36_0"><span class="kg-val" id="kg_36_0">Cable 10 kg</span><button class="edit-btn" onclick="editKg('kg_36_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Anti-rotation core stability. Especially important after deadlifts — reinforces spinal control under fatigue.</div></td>
-      </tr>
-      <tr>
-        <td><div class="en">Russian Twist <span class="tb str">STRAIGHT</span></div></td>
-        <td class="sr">3 × 20</td><td class="kg"><span class="kg-wrap" data-id="kg_37_0"><span class="kg-val" id="kg_37_0">5 kg</span><button class="edit-btn" onclick="editKg('kg_37_0')" title="Edit weight">✏️</button></span></td>
-        <td><div class="goal" style="font-size:11px;color:#6aaa6a;font-style:italic">Oblique rotational strength for sport movement.</div></td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="stitle">Post-Session Stretch <span class="sm">8 min — mandatory</span></div>
-    <div class="sr2"><span class="sn">Standing hamstring stretch, foot elevated</span><span class="st2">45 s each</span></div>
-    <div class="sr2"><span class="sn">Lying glute stretch, figure-4</span><span class="st2">60 s each</span></div>
-    <div class="sr2"><span class="sn">Kneeling hip flexor stretch</span><span class="st2">45 s each</span></div>
-    <div class="sr2"><span class="sn">Calf stretch — straight knee then bent knee</span><span class="st2">30 s × 2 each</span></div>
-    <div class="sr2"><span class="sn">Cat-cow — slow, controlled</span><span class="st2">10 reps · disc mobility, end every leg session</span></div>
-    <div class="box warn"><strong>KNEE CHECK:</strong> Same rule every week — right knee swelling next morning = reduce load next session immediately.</div>
-    <div class="box disc"><strong>DISC NOTE:</strong> Cat-cow at end of every session is 90 seconds that maintains disc mobility and reduces next-day stiffness. Not optional.</div>
-  </div>
-  </div>
 </div>
+
 
 <div id="footer-view" style="display:none">
-<div class="footer">
-  <h2>Progression Rules &amp; Sport Return Roadmap</h2>
-  <div class="pg">
-    <div class="pc">
-      <h3>Upper Body Progression</h3>
-      <p>
-        <strong>Ramping sets:</strong> When you complete the top set cleanly with 1–2 reps still available, increase all weights by the smallest increment next session.<br><br>
-        <strong>Straight sets:</strong> Complete all sets and reps cleanly → add 2.5 kg next session.<br><br>
-        <strong>DB bench current:</strong> Starting at 10→12→13→14 kg/side. When 14 kg feels easy on set 4, move top set to 15 kg and adjust others up accordingly.<br><br>
-        <strong>Barbell bench return:</strong> Weeks 4–6 when DB at 14 kg/side feels easy. Start barbell at 40 kg total for sets of 10.
-      </p>
+  <div class="footer">
+    <h2>Progression Rules &amp; Sport Return Roadmap</h2>
+    <div class="pg">
+      <div class="pc">
+        <h3>Upper Body Progression</h3>
+        <p>
+          <strong>Ramping sets:</strong> When you complete the top set cleanly with 1&#8211;2 reps still available, increase all weights by the smallest increment next session.<br><br>
+          <strong>Straight sets:</strong> Complete all sets and reps cleanly &#8594; add 2.5 kg next session.<br><br>
+          <strong>DB bench current:</strong> Starting at 10&#8594;12&#8594;13&#8594;14 kg/side. When 14 kg feels easy on set 4, move top set to 15 kg.<br><br>
+          <strong>Barbell bench return:</strong> Weeks 4&#8211;6 when DB at 14 kg/side feels easy. Start at 40 kg total for sets of 10.
+        </p>
+      </div>
+      <div class="pc">
+        <h3>Lower Body Progression</h3>
+        <p>
+          <strong>Rule #1:</strong> No swelling = eligible to progress. Swelling = same weights, no exceptions.<br><br>
+          <strong>Leg press:</strong> +5 kg on top set when all sets feel smooth.<br><br>
+          <strong>Bulgarian split squat:</strong> +1 kg/side every 2 weeks. Tendons adapt 3&#215; slower than muscles.<br><br>
+          <strong>Deadlift:</strong> +2.5 kg/week maximum while technique is still developing.<br><br>
+          <strong>Hip thrust:</strong> +5 kg when all ramp sets feel controlled.
+        </p>
+      </div>
+      <div class="pc">
+        <h3>Running + Sport Return</h3>
+        <p>
+          <strong>Now:</strong> 9 min · next target 9:30<br><br>
+          <strong>15 min continuous</strong> = eligible for outdoor running<br><br>
+          <strong>20 min + zero swelling 4 weeks straight</strong> = start direction-change jogging<br><br>
+          <strong>Basketball / football return:</strong> Only after 20 min comfortable AND right leg single-leg press matches left leg weight. No shortcuts.
+        </p>
+      </div>
     </div>
-    <div class="pc">
-      <h3>Lower Body Progression</h3>
-      <p>
-        <strong>Rule #1:</strong> No swelling = eligible to progress. Swelling = same weights, no exceptions.<br><br>
-        <strong>Leg press:</strong> +5 kg on top set when all sets feel smooth.<br><br>
-        <strong>Bulgarian split squat:</strong> +1 kg/side every 2 weeks. Tendons adapt 3× slower than muscles — this is not slow, this is correct.<br><br>
-        <strong>Deadlift:</strong> +2.5 kg/week maximum while technique is still developing.<br><br>
-        <strong>Hip thrust:</strong> +5 kg when all ramp sets feel controlled.
-      </p>
-    </div>
-    <div class="pc">
-      <h3>Running + Sport Return</h3>
-      <p>
-        <strong>Now:</strong> 9 min · next target 9:30<br><br>
-        <strong>15 min continuous</strong> = eligible for outdoor running<br><br>
-        <strong>20 min + zero swelling 4 weeks straight</strong> = start direction-change jogging<br><br>
-        <strong>Basketball / football return:</strong> Only after 20 min comfortable AND right leg single-leg press matches left leg weight. Asymmetric leg strength = re-injury risk. No shortcuts here.
-      </p>
+    <div class="key">
+      <strong>Tempo:</strong> 3-1-1 = 3 sec lower · 1 sec pause · 1 sec lift &nbsp;|&nbsp;
+      <strong>Full ROM:</strong> full stretch at bottom, full contraction at top &nbsp;|&nbsp;
+      <strong>RAMP:</strong> add weight each set &nbsp;|&nbsp;
+      <strong>STRAIGHT:</strong> same weight all sets &nbsp;|&nbsp;
+      <strong>kg/side:</strong> each dumbbell individually &nbsp;|&nbsp;
+      <strong>Single kg:</strong> total on machine or barbell &nbsp;|&nbsp;
+      <strong>Rest:</strong> start timer when last rep ends
     </div>
   </div>
-  <div class="key">
-    <strong>Tempo notation:</strong> 3-1-1 = 3 sec lowering · 1 sec pause · 1 sec lifting &nbsp;|&nbsp;
-    <strong>Full ROM:</strong> complete range — full stretch at bottom, full contraction at top, specific to each exercise as noted &nbsp;|&nbsp;
-    <strong>RAMP:</strong> add weight each set as listed &nbsp;|&nbsp;
-    <strong>STRAIGHT:</strong> same weight all sets &nbsp;|&nbsp;
-    <strong>kg/side:</strong> each dumbbell individually &nbsp;|&nbsp;
-    <strong>Single kg:</strong> total on machine or barbell &nbsp;|&nbsp;
-    <strong>Warm-up sets:</strong> general warm-up at session start · specific warm-up sets done immediately before that exercise &nbsp;|&nbsp;
-    <strong>Rest timing:</strong> start timer when last rep ends
-  </div>
-</div>
-
-</div>
 </div>
 
 <div class="tools-bar" id="toolsBar" style="display:none">
   <span>Weights:</span>
-  <button class="tool-btn" onclick="exportWeights()">⬇ Export weights.json</button>
-  <button class="tool-btn" onclick="importWeights()">⬆ Import weights.json</button>
-  <button class="tool-btn danger" onclick="resetWeights()">↺ Reset all to default</button>
+  <button class="tool-btn" onclick="exportWeights()">&#8595; Export weights.json</button>
+  <button class="tool-btn" onclick="importWeights()">&#8593; Import weights.json</button>
+  <button class="tool-btn danger" onclick="resetWeights()">&#8635; Reset all to default</button>
   <input type="file" id="importFile" accept=".json" style="display:none" onchange="handleImport(event)">
 </div>
 
@@ -830,97 +1029,27 @@ tr:hover td{background:#131313}
 </div>
 
 <script>
-const DEFAULTS = {
-  "kg_0_0": "10 kg/side",
-  "kg_0_1": "12 kg/side",
-  "kg_0_2": "13 kg/side",
-  "kg_0_3": "14 kg/side",
-  "kg_1_0": "10 kg",
-  "kg_2_0": "6 kg/side",
-  "kg_2_1": "8 kg/side",
-  "kg_2_2": "10 kg/side",
-  "kg_3_0": "4 kg/side",
-  "kg_4_0": "10 kg",
-  "kg_5_0": "10 kg",
-  "kg_6_0": "15 kg",
-  "kg_7_0": "Bodyweight",
-  "kg_8_0": "60 kg",
-  "kg_8_1": "70 kg",
-  "kg_8_2": "80 kg",
-  "kg_8_3": "85 kg",
-  "kg_9_0": "12 kg",
-  "kg_9_1": "16 kg",
-  "kg_9_2": "20 kg",
-  "kg_10_0": "4 kg/side",
-  "kg_11_0": "15 kg each",
-  "kg_12_0": "20 kg",
-  "kg_13_0": "35 kg",
-  "kg_14_0": "BW + 20 kg",
-  "kg_15_0": "Cable 10 kg",
-  "kg_16_0": "5 kg",
-  "kg_17_0": "22 kg",
-  "kg_17_1": "26 kg",
-  "kg_17_2": "30 kg",
-  "kg_17_3": "34 kg",
-  "kg_18_0": "30 kg",
-  "kg_19_0": "Your start weight",
-  "kg_19_1": "+2.5 kg",
-  "kg_19_2": "+2.5 kg",
-  "kg_20_0": "16\u201320 kg",
-  "kg_21_0": "10 kg",
-  "kg_22_0": "Bodyweight",
-  "kg_23_0": "28 kg",
-  "kg_24_0": "Your working weight",
-  "kg_25_0": "Your working weight",
-  "kg_26_0": "15 kg",
-  "kg_27_0": "Bodyweight",
-  "kg_28_0": "30 kg",
-  "kg_28_1": "35 kg",
-  "kg_28_2": "40 kg",
-  "kg_28_3": "45 kg",
-  "kg_29_0": "50 kg",
-  "kg_29_1": "57.5 kg",
-  "kg_29_2": "62.5 kg",
-  "kg_30_0": "30 kg",
-  "kg_30_1": "35 kg",
-  "kg_30_2": "40 kg",
-  "kg_30_3": "45 kg",
-  "kg_31_0": "4 kg/side",
-  "kg_32_0": "20 kg each",
-  "kg_33_0": "Bodyweight",
-  "kg_34_0": "20 kg",
-  "kg_35_0": "BW + 20 kg",
-  "kg_36_0": "Cable 10 kg",
-  "kg_37_0": "5 kg"
-};
-const LS_KEY = 'training_weights_v1';
+const DEFAULTS = {};
+document.querySelectorAll('.sl-weight').forEach(el => {
+  if (el.id) DEFAULTS[el.id] = el.textContent;
+});
+
+const LS_KEY = 'training_weights_v3';
 let currentEditId = null;
 
-// ── Storage ──
 function loadWeights() {
-  try {
-    const raw = localStorage.getItem(LS_KEY);
-    return raw ? JSON.parse(raw) : {};
-  } catch(e) { return {}; }
+  try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; }
+  catch(e) { return {}; }
 }
-
-function saveWeights(weights) {
-  localStorage.setItem(LS_KEY, JSON.stringify(weights));
-}
-
+function saveWeights(w) { localStorage.setItem(LS_KEY, JSON.stringify(w)); }
 function applyWeights() {
-  const weights = loadWeights();
-  document.querySelectorAll('.kg-val').forEach(el => {
-    const id = el.id;
-    if (weights[id] !== undefined) {
-      el.textContent = weights[id];
-    } else if (DEFAULTS[id] !== undefined) {
-      el.textContent = DEFAULTS[id];
-    }
+  const w = loadWeights();
+  document.querySelectorAll('.sl-weight').forEach(el => {
+    if (!el.id) return;
+    el.textContent = w[el.id] !== undefined ? w[el.id] : (DEFAULTS[el.id] || el.textContent);
   });
 }
 
-// ── Navigation ──
 function showMenu() {
   document.getElementById('menu').style.display = '';
   document.querySelectorAll('.day-view').forEach(d => d.style.display = 'none');
@@ -937,91 +1066,63 @@ function showDay(name) {
   if (el) {
     el.style.display = 'block';
     document.getElementById('footer-view').style.display = 'block';
-    document.getElementById('backBtn').style.display = 'inline-block';
+    document.getElementById('backBtn').style.display = 'inline-flex';
     document.getElementById('toolsBar').style.display = 'flex';
     applyWeights();
     window.scrollTo(0, 0);
   }
 }
 
-// ── Edit ──
 function editKg(id) {
   currentEditId = id;
-  const current = document.getElementById(id)?.textContent || '';
-  document.getElementById('modalInput').value = current;
-  document.getElementById('modalLabel').textContent = 'Current: ' + current;
+  const cur = document.getElementById(id)?.textContent || '';
+  document.getElementById('modalInput').value = cur;
+  document.getElementById('modalLabel').textContent = 'Current: ' + cur;
   document.getElementById('modalOverlay').classList.add('open');
   setTimeout(() => document.getElementById('modalInput').select(), 50);
 }
-
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
   currentEditId = null;
 }
-
 function saveModal() {
   if (!currentEditId) return;
-  const newVal = document.getElementById('modalInput').value.trim();
-  if (!newVal) return;
-  const el = document.getElementById(currentEditId);
-  if (el) el.textContent = newVal;
-  const weights = loadWeights();
-  weights[currentEditId] = newVal;
-  saveWeights(weights);
+  const v = document.getElementById('modalInput').value.trim();
+  if (!v) return;
+  document.getElementById(currentEditId).textContent = v;
+  const w = loadWeights(); w[currentEditId] = v; saveWeights(w);
   closeModal();
 }
 
-// Enter key in modal
 document.getElementById('modalInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') saveModal();
   if (e.key === 'Escape') closeModal();
 });
-
-// Click outside modal
 document.getElementById('modalOverlay').addEventListener('click', e => {
   if (e.target === document.getElementById('modalOverlay')) closeModal();
 });
 
-// ── Import / Export ──
 function exportWeights() {
-  const weights = loadWeights();
-  const merged = Object.assign({}, DEFAULTS, weights);
-  const blob = new Blob([JSON.stringify(merged, null, 2)], {type: 'application/json'});
+  const merged = Object.assign({}, DEFAULTS, loadWeights());
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'weights.json';
-  a.click();
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(merged, null, 2)], {type:'application/json'}));
+  a.download = 'weights.json'; a.click();
 }
-
-function importWeights() {
-  document.getElementById('importFile').click();
-}
-
-function handleImport(event) {
-  const file = event.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      const data = JSON.parse(e.target.result);
-      saveWeights(data);
-      applyWeights();
-      alert('Weights imported successfully.');
-    } catch(err) {
-      alert('Invalid JSON file.');
-    }
+function importWeights() { document.getElementById('importFile').click(); }
+function handleImport(e) {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = ev => {
+    try { saveWeights(JSON.parse(ev.target.result)); applyWeights(); alert('Weights imported.'); }
+    catch { alert('Invalid JSON file.'); }
   };
-  reader.readAsText(file);
-  event.target.value = '';
+  r.readAsText(f); e.target.value = '';
 }
-
 function resetWeights() {
   if (!confirm('Reset all weights to program defaults?')) return;
-  localStorage.removeItem(LS_KEY);
-  applyWeights();
+  localStorage.removeItem(LS_KEY); applyWeights();
 }
 
-// ── Init ──
 applyWeights();
 </script>
 </body>
